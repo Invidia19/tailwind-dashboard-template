@@ -401,7 +401,7 @@ const User = () => {
                         </div>
                         
                     </div>
-                    <SimilarData/>
+                    {/* <SimilarData/> */}
                 </div>
                 
             </main>

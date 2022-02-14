@@ -102,6 +102,21 @@ const Input = () => {
             "Phone_Mobile": phoneMobile,
             "Phone_Mobile2": phoneMobile2,
         }
+        const requestOptions = {
+            method:'post',
+            headers:{ 
+                    'Content-Type': 'application/json',
+                    "Access-Control-Request-Headers": "*",
+                    "Access-Control-Request-Method": "*",
+                    "Access-Control-Allow-Origin": "*"
+                },
+            body:JSON.stringify(jsoninput)
+            }
+        
+
+        fetch('http://34.122.147.59:8080/user',requestOptions)
+        .then(r=>r.json())
+        .then(data=>console.log(data))
         
         return console.log(jsoninput);
     }
