@@ -1,0 +1,7 @@
+.user__data td{
+    font-size:15px;
+}
+
+.user__data td:nth-child(3n-2){
+    font-size:17px;
+}
